@@ -1,0 +1,11 @@
+.admin{
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    /* styles for tablet screens */
+    .admin{
+        flex-direction: column;
+    }
+    
+}
+

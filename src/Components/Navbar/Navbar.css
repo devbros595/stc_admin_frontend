@@ -1,0 +1,71 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar h3 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: "Zain";
+}
+.nav-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   position: relative;
+}
+.nav-profile h4{
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 500;
+    color: green;
+}
+.nav-profile img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.toggle-icon{
+    transition: 0.3s ease-in-out;
+}
+.toggle-icon:hover{
+    transform: scale(1.4);
+    
+}
+  
+.navbar .material-symbols-outlined {
+    color: gold;
+}
+.logout-menu{
+    position: absolute;
+    top: 1.3em;
+    right: 0;
+}
+.logout-menu button{
+    background: rgba(255, 0, 0, 0.724);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-family: karla;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    /* styles for extra small mobile screens */
+    .navbar h3 {
+        font-size: 20px;
+    }
+    .nav-profile h4{
+        font-size: 12px;
+    }
+}

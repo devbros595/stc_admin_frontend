@@ -80,6 +80,10 @@
     display: flex;
     gap: 10px;
   }
+  .loginsignup-fields i{
+    cursor: pointer;
+  }
+  
   
   /* Media queries */
   

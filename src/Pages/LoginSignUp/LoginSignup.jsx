@@ -8,9 +8,14 @@ export default function LoginSignup() {
     password: "",
     email: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
 
   const changeHandler = (e) => {
     setFormData({ ...formData, [e.target.name]: [e.target.value] });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -36,12 +41,17 @@ export default function LoginSignup() {
             type="email"
             placeholder="Email Address"
           />
+
           <input
             name="password"
             value={formData.password}
             onChange={changeHandler}
-            type="password"
+            type={showPassword ? "text" : "password"}
             placeholder="Password"
+          />
+          <i
+            className={`fa-regular ${showPassword ? "fa-eye-slash" : "fa-eye"}`}
+            onClick={togglePasswordVisibility}
           />
         </div>
         <button>Continue</button>
